@@ -5,40 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <style>
-    .block-active {
-      display: flex;
-      padding: 10px;
-      box-shadow: 0px 4px 20px 0px #2b539f26;
-      height: 620px;
-      border-radius: 20px;
-      margin-bottom: 25px;
-    }
-    .block-active-images {
-      display: flex;
-      margin-left: 60px;
-    }
-    .block-active-images-main {
-      width: 600px;
-      background-color: #d9d9d9;
-      border-radius: 20px;
-    }
-    .block-active-images-secondary {
-      display: flex;
-      flex-direction: column;
-      margin-left: 10px;
-    }
-    .block-active-images-secondary div {
-      width: 215px;
-      height: 200px;
-      background-color: #d9d9d9;
-      border-radius: 20px;
-      margin-bottom: 10px;
-    }
-    .block-active-images-secondary div:last-child {
-      margin-bottom: 0;
-    }
-  </style>
   <body>
     <main>
       <div class="container">
@@ -75,11 +41,11 @@
                   fill="#828282"
                 />
               </svg>
-              <input type="text" value="Поиск" />
+              <input type="text" placeholder="Поиск" />
             </div>
           </div>
           <nav class="header-item-nav">
-            <div class="header-item-nav-block">
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span
@@ -87,8 +53,8 @@
                   панель</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block header-item-nav-block-active">
+            </a>
+            <a class="header-item-nav-block header-item-nav-block-active">
               <div></div>
               <button>
                 <span
@@ -96,8 +62,8 @@
                   вытяжка</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span
@@ -105,8 +71,8 @@
                   машина</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span
@@ -114,8 +80,8 @@
                   машины</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span
@@ -123,8 +89,8 @@
                   шкафы</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span
@@ -132,19 +98,19 @@
                   печи</span
                 >
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span>Холодильники</span>
               </button>
-            </div>
-            <div class="header-item-nav-block">
+            </a>
+            <a class="header-item-nav-block">
               <div></div>
               <button>
                 <span>МБТ</span>
               </button>
-            </div>
+            </a>
           </nav>
         </div>
         <div class="block-active">
@@ -156,31 +122,34 @@
               <div></div>
             </div>
           </div>
-          <div>
+          <div class="block-active-info">
             <div>
-              <div>уход за техникой</div>
-              <div>варочная панель</div>
-              <div>индукция</div>
+              <div class="block-active-info-tegs">
+                <div>уход за техникой</div>
+                <div>варочная панель</div>
+                <div>индукция</div>
+              </div>
+              <div class="block-active-info-text">
+                <h2>
+                  Посуда для индукционных плит: руководство по выбору посуды
+                </h2>
+                <p>
+                  Поверхность использует электромагнитную технологию для
+                  непосредственного нагрева дна посуды, а не поверхности стекла
+                  как на классических поверхностях с нагревательной  спиралью.
+                  Это делает индукционные поверхности более энергоэффективными и
+                  быстрыми, чем газовые или поверхности типа hi-light. Однако
+                  только некоторые виды посуды подходят для использования на
+                  индукционных плитах. Важнейшим фактором при выборе посуды для
+                  индукции/ является материал. Требуется посуда, изготовленная
+                  из магнитного материала, например из чугуна или нержавеющей
+                  стали. Немагнитные материалы, такие как алюминий, медь и
+                  стекло, не подходят для использования на индукционных
+                  поверхностях.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2>
-                Посуда для индукционных плит: руководство по выбору посуды
-              </h2>
-              <p>
-                Поверхность использует электромагнитную технологию для
-                непосредственного нагрева дна посуды, а не поверхности стекла
-                как на классических поверхностях с нагревательной  спиралью. Это
-                делает индукционные поверхности более энергоэффективными и
-                быстрыми, чем газовые или поверхности типа hi-light. Однако
-                только некоторые виды посуды подходят для использования на
-                индукционных плитах. Важнейшим фактором при выборе посуды для
-                индукции/ является материал. Требуется посуда, изготовленная из
-                магнитного материала, например из чугуна или нержавеющей стали.
-                Немагнитные материалы, такие как алюминий, медь и стекло, не
-                подходят для использования на индукционных поверхностях.
-              </p>
-            </div>
-            <div>
+            <div class="block-active-info-button">
               <button>Перейти в каталог</button>
               <button>Подобрать стиль</button>
             </div>
@@ -214,5 +183,17 @@
         </div>
       </div>
     </main>
+    <script>
+      const blocks = document.querySelectorAll(".header-item-nav-block");
+      function makeActive(event) {
+        blocks.forEach((block) => {
+          block.classList.remove("header-item-nav-block-active");
+        });
+        event.currentTarget.classList.add("header-item-nav-block-active");
+      }
+      blocks.forEach((block) => {
+        block.addEventListener("click", makeActive);
+      });
+    </script>
   </body>
 </html>

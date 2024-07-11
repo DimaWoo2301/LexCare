@@ -118,8 +118,10 @@
   .header-item-nav-block{
     margin-right: 15px;
     position: relative;
+    cursor: pointer;
   }
   .header-item-nav-block button{
+    cursor: pointer;
     font-size: 13px;
     font-weight: 500;
     line-height: 15.85px;
@@ -147,4 +149,111 @@
     border-radius: 15px;
     top: 0;
     left: 0;
+  }
+
+
+  .block-active {
+    display: flex;
+    padding: 10px 60px 10px 10px;
+    box-shadow: 0px 4px 20px 0px #2b539f26;
+    height: 620px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+  }
+  .block-active-images {
+    display: flex;
+    margin-right: 60px;
+  }
+  .block-active-images-main {
+    width: 600px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+  }
+  .block-active-images-secondary {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+  }
+  .block-active-images-secondary div {
+    width: 215px;
+    height: 200px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  .block-active-images-secondary div:last-child {
+    margin-bottom: 0;
+  }
+  .block-active-info-tegs {
+    display: flex;
+    align-items: center;
+  }
+  .block-active-info-tegs div {
+    padding: 10px 15px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 57px;
+    line-height: 15.85px;
+    margin-right: 10px;
+  }
+  .block-active-info-tegs div:last-child {
+    margin-right: 0;
+  }
+  .block-active-info-tegs :nth-child(1) {
+    background-color: #ffa8a8;
+  }
+  .block-active-info-tegs :nth-child(2) {
+    background-color: #f8ebbf;
+  }
+  .block-active-info-tegs :nth-child(3) {
+    background-color: #bfedf8;
+  }
+
+  .block-active-info-text h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30.48px;
+  }
+  .block-active-info-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  .block-active-info-button {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .block-active-info-button button {
+    padding: 15px 25px;
+    border-radius: 61px;
+    border: none;
+  }
+  .block-active-info-button button:first-child {
+    padding: 15px 25px;
+    border-radius: 61px;
+    background-color: #ededed;
+    color: #000000;
+    margin-right: 20px;
+    transition: 300ms;
+  }
+  .block-active-info-button button:first-child:hover {
+    background-color: #bf1b3e;
+    color: #ffffff;
+  }
+  .block-active-info-button button:last-child {
+    padding: 15px 25px;
+    border-radius: 61px;
+    background-color: #bf1b3e;
+    color: #ffffff;
+    transition: 300ms;
+  }
+  .block-active-info-button button:last-child:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  .block-active-info {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
   }
