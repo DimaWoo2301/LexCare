@@ -14,6 +14,7 @@
     max-width: 1600px;
   }
   .block {
+    position: relative;
     display: flex;
     align-items: end;
     border-radius: 20px;
@@ -26,6 +27,7 @@
     transition: 500ms ease;
     text-decoration: none;
     margin-bottom: 15px;
+    cursor: pointer;
   }
   .block:hover {
     background-size: 110%;
@@ -151,6 +153,52 @@
     left: 0;
   }
 
+  .block h2{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30.48px;
+  }
+
+  .block p{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 24px;
+  }
+
+  .block-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .block:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .block:hover .block-text {
+    opacity: 1;
+  }
+
+  .block-text button{
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #BF1B3E;
+    color:#ffffff;
+    border: none;
+    cursor: pointer;
+  }
+  .block-text h2{
+    margin: 0;
+  }
+
+  .block-text > div {
+    display: flex;
+  }
 
   .block-active {
     display: flex;
