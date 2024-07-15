@@ -44,6 +44,27 @@
                 />
               </svg>
               <input type="text" id="inputField" placeholder="Поиск" />
+              <span id="clearButton" class="clear-button"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_67_1356)">
+                    <path
+                      d="M2.92996 17.0701C1.97486 16.1476 1.21303 15.0442 0.688943 13.8241C0.164853 12.6041 -0.111009 11.2919 -0.122547 9.96409C-0.134085 8.6363 0.118932 7.3195 0.62174 6.09054C1.12455 4.86158 1.86708 3.74506 2.80601 2.80613C3.74493 1.8672 4.86145 1.12467 6.09042 0.621863C7.31938 0.119054 8.63618 -0.133963 9.96397 -0.122425C11.2918 -0.110887 12.604 0.164975 13.824 0.689065C15.044 1.21316 16.1475 1.97498 17.07 2.93008C18.8915 4.8161 19.8995 7.34212 19.8767 9.96409C19.8539 12.5861 18.8022 15.0942 16.9481 16.9483C15.0941 18.8023 12.5859 19.854 9.96397 19.8768C7.342 19.8996 4.81598 18.8917 2.92996 17.0701ZM11.4 10.0001L14.23 7.17008L12.82 5.76008L9.99996 8.59008L7.16996 5.76008L5.75996 7.17008L8.58996 10.0001L5.75996 12.8301L7.16996 14.2401L9.99996 11.4101L12.83 14.2401L14.24 12.8301L11.41 10.0001H11.4Z"
+                      fill="#5A5A5A"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_67_1356">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </span>
             </div>
           </div>
         </div>
@@ -258,6 +279,22 @@
             this.style.display = "none";
           }
         });
+
+      const clearButton = document.getElementById("clearButton");
+
+      inputField.addEventListener("input", function () {
+        if (inputField.value.length > 0) {
+          clearButton.style.display = "inline";
+        } else {
+          clearButton.style.display = "none";
+        }
+      });
+
+      clearButton.addEventListener("click", function () {
+        inputField.value = "";
+        clearButton.style.display = "none";
+        inputField.focus();
+      });
     </script>
   </body>
 </html>
